@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anggie Fiqy R. — Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between antialiased">
+
+  <!-- Header / Profil Utama -->
+  <main class="max-w-2xl mx-auto px-5 py-12 w-full">
+    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-lg">
+      <span class="inline-block text-xs font-medium px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+        Versi Tes Tanpa Database (v1.0)
+      </span>
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+        Anggie Fiqy R.
+      </h1>
+      <p class="text-sky-400 font-medium mt-1">
+        Mortgage &amp; Financial Solutions &bull; Web Developer
+      </p>
+      <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+        Berbasis di Bandar Lampung. Halaman ini adalah kerangka awal portofolio dan sistem solusi pembiayaan yang disimpan di GitHub.
+      </p>
+    </div>
+
+    <!-- Daftar Proyek Sementara (Data Statis) -->
+    <section class="mt-8">
+      <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">
+        Proyek &amp; Layanan
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-sky-500/50 transition">
+          <h3 class="font-semibold text-white">Smart Mortgage System</h3>
+          <p class="text-slate-400 text-sm mt-1.5">
+            Perhitungan simulasi angsuran KPR, rasio DBR, dan dokumentasi sosialisasi pembiayaan.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-sky-500/50 transition">
+          <h3 class="font-semibold text-white">Web Development</h3>
+          <p class="text-slate-400 text-sm mt-1.5">
+            Pengembangan aplikasi web responsif berbasis PHP, Tailwind CSS, dan integrasi API.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tombol Tes Interaksi -->
+    <div class="mt-8 flex items-center gap-3">
+      <button onclick="tesTombol()" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm px-4 py-2.5 rounded-xl transition">
+        Tes Fungsi Halaman
+      </button>
+      <span id="status-tes" class="text-xs text-slate-400"></span>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-5 text-center text-xs text-slate-500">
+    &copy; 2026 Anggie Fiqy R. &bull; anggiefiqy.my.id
+  </footer>
+
+  <script>
+    function tesTombol() {
+      const el = document.getElementById('status-tes');
+      el.textContent = 'Kode berhasil berjalan normal tanpa database.';
+      el.classList.replace('text-slate-400', 'text-emerald-400');
+    }
+  </script>
+</body>
+</html>
